@@ -2,7 +2,7 @@
 
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.tutorialspoint.onlineviewer"
+        id        = "myId"
         version   = "1.0">
 
     <name>Sample App</name>
@@ -17,6 +17,12 @@
 
     <preference name="permissions" value="none"/>
 
+	<platform name="android">
+		<splash src="res/mipmap-hdpi/ic_launcher.png" density="land-hdpi"/>
+		<splash src="res/mipmap-ldpi/ic_launcher.png" density="land-ldpi"/>
+		<splash src="res/mipmap-mdpi/ic_launcher.png" density="land-mdpi"/>
+		<splash src="res/mipmap-xdpi/ic_launcher.png" density="land-xhdpi"/>
+	</platform>
 
     <icon src="res/icon/android/drawable-ldpi/tp_icon.png" gap:platform="android" gap:qualifier="ldpi" />
     <icon src="res/icon/android/drawable-mdpi/tp_icon.png" gap:platform="android" gap:qualifier="mdpi" />
