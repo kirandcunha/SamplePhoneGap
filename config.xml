@@ -23,7 +23,7 @@
 		<splash src="res/mipmap-mdpi/ic_launcher.png" gap:qualifier="land-mdpi"/>
 		<splash src="res/mipmap-xdpi/ic_launcher.png" gap:qualifier="land-xhdpi"/>
 	</platform-->
-	<gap:splash src="splash/ios/Default-568h@2x~iphone.png" gap:platform="android"/>
+	<gap:splash src="Splash/ios/splash.png" gap:platform="android"/>
 	<preference name="SplashScreenDelay" value="10000" />
 
 
