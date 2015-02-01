@@ -1,30 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0"
-	id="myId" version="1.0">
+	id="com.krn.core" version="1.0">
 
-	<name>Sample App</name>
+	<name>Basic Core</name>
 
 	<description>
-		Sample app for testing
+		Provides the core on which an app can be built
 	</description>
 
-	<author href="www.google.co.in" email="contact@me.com">
-		Kira D Cunha
+	<author>
+		Kiran D'Cunha
 	</author>
 
 	<preference name="permissions" value="none" />
 
-<!-- 	<platform name="android"> -->
-<!-- 		<splash src="res/mipmap-hdpi/ic_launcher.png" gap:qualifier="land-hdpi" /> -->
-<!-- 		<splash src="res/mipmap-ldpi/ic_launcher.png" gap:qualifier="land-ldpi" /> -->
-<!-- 		<splash src="res/mipmap-mdpi/ic_launcher.png" gap:qualifier="land-mdpi" /> -->
-<!-- 		<splash src="res/mipmap-xdpi/ic_launcher.png" gap:qualifier="land-xhdpi" /> -->
-<!-- 	</platform> -->
 	<gap:splash src="res/Splash/splash.png" gap:platform="android" />
-	<preference name="SplashScreenDelay" value="5000" />
-
-
+	<preference name="SplashScreenDelay" value="3000" />
 
 	<icon src="res/mipmap-ldpi/ic_launcher.png" gap:platform="android"
 		gap:qualifier="ldpi" />
@@ -37,16 +29,12 @@
 	<icon src="res/mipmap-xxhdpi/ic_launcher.png" gap:platform="android"
 		gap:qualifier="xxhdpi" />
 
-	<!-- <icon src="res/icon/ios/Icon-72.png" gap:platform="ios" -->
-	<!-- gap:qualifier="" /> -->
-	<!-- <icon src="res/icon/ios/icon-57.png" gap:platform="ios" width="57" -->
-	<!-- height="57" /> -->
-	<!-- <icon src="res/icon/ios/icon-72.png" gap:platform="ios" width="72" -->
-	<!-- height="72" /> -->
-	<!-- <icon src="res/icon/ios/icon-57-2x.png" gap:platform="ios" width="114" -->
-	<!-- height="114" /> -->
-	<!-- <icon src="res/icon/ios/icon-72-2x.png" gap:platform="ios" width="144" -->
-	<!-- height="144" /> -->
+	<gap:config-file platform="android" parent="/manifest"
+		overwrite="true">
+		<application android:theme="@android:style/Theme.NoTitleBar"></application>
+	</gap:config-file>
+	
+</config-file>
 
 
 </widget>
